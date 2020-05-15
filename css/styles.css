@@ -1,13 +1,9 @@
 @import './images.css';
 @import './header.css';
+@import './theme.css';
 
 /* Where the styles will go */
-:root{
-    --hd-background-color: #fafafa;
-    --background-border: #efefef;
-    --text-color: #0063B2FF;
-    --hover-color: #9CC3D5FF;
-}
+
 .container {
     margin: auto;
     display: grid;
@@ -21,21 +17,10 @@
     "footer footer footer footer footer footer footer footer";
 }
 
-
-
-a{
-    text-decoration: none;
-    color: var(--text-color); 
+body{
+    background-color: var(--main-background-color);
 }
 
-a:hover {
-    text-decoration: none;
-    color: var(--hover-color);
-}
-
-#title{
-    text-align: center;
-}
 
 
 .content{
@@ -46,7 +31,7 @@ a:hover {
 }
 
 .card{
-    border-color: var(--hd-background-color);
+    background-color: var(--hd-background-color);
     border-radius: 2%;
     position: relative;
     text-align: center;
@@ -90,7 +75,8 @@ a:hover {
 
 .footer{
     border: 1px solid #efefef;
-    background-color: #fafafa;
+    background-color: var(--hd-background-color);
+    color: var(--text-color);
     border-radius: 3px;
     text-align: center;
     grid-area:footer;
@@ -99,9 +85,9 @@ a:hover {
 .categories{
     display:none;
     border: 1px solid #efefef;
-    background-color: #fafafa;
+    background-color: var(--hd-background-color);
     border-radius: 3px;
-    color: #0063B2FF;
+    color: var(--text-color);
     grid-area: categories;
 }
 
@@ -138,6 +124,7 @@ a:hover {
         align-items: center;
         margin: auto;
     }
+    
     .categories{
         display: block;
     }
