@@ -1,91 +1,38 @@
 @import './images.css';
+@import './header.css';
+@import './theme.css';
+@import './text-style.css';
 
-
-/* placeholder for debuging */
-*{
-    box-sizing: border-box;
-}
 
 .container{
     display: grid;
-    grid-template-rows: 13% 75% 12%;
-    grid-template-areas:"header"
-    "content"
-    "footer";
+    gap: 10px;
+    grid-template-columns: repeat(1fr, 8);
+    grid-template-areas: "header header header header header header header header"
+    "content content content content content content content content"
+    "sidebar sidebar sidebar sidebar sidebar sidebar sidebar sidebar"
+    "footer footer footer footer footer footer footer footer";
 }
 
 .content{
-    background-color: #fafafa;
-    text-align: center;
-    justify-content: center;
+    display: grid;
     grid-area: content;
-    display: grid;
-    grid-template-rows: repeat(3, auto);
-    grid-template-areas: "content-header"
-    "content-body"
-    "content-footer";
+    grid-template-columns: repeat(1fr, 2);
+    grid-auto-rows: auto;
+    gap: 0.8em;
+    grid-template-areas: "blog-title blog-title"
+    "author author"
+    "post post";
 }
 
-.header{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #ffffff;
-    background-color: #68829E;
-    display: grid;
-    grid-area: header;
-    height: 100%;
-    grid-template-columns: repeat(3, 2fr 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-areas: 
-    "title title title title title title"
-    "menu menu menu menu menu menu"
+.blog-title{
+    grid-area: blog-title;
 }
 
-.header-title{
-    text-align: center;
-    grid-area:title;
-    align-items: center;
-    justify-content: center;
+.author{
+    grid-area: author;
 }
 
-.header-menu{
-    display: flex;
-    grid-area: menu;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.title{
-    margin-left: ;
-    font-size: 2rem;
-}
-
-.footer{
-    background-color: #505160;
-}
-
-.content-header{
-    grid-area:content-header;
-}
-
-.content-body{
-    grid-area:content-body;
-}
-
-.content-footer{
-    grid-area: content-footer;
-}
-
-@media (min-width: 600px){
-    .header{
-        color: #ffffff;
-        background-color: #68829E;
-        display: grid;
-        grid-area: header;
-        grid-template-columns: repeat(3, 2fr 1fr);
-        grid-template-rows: auto;
-        grid-template-areas: 
-        "title title menu menu menu menu"
-    }
+.post{
+    grid-area: post;
 }
