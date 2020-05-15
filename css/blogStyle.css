@@ -1,7 +1,7 @@
 @import './images.css';
 @import './header.css';
 @import './theme.css';
-@import './text-style.css';
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Roboto:wght@700&display=swap');
 
 
 .container{
@@ -26,13 +26,37 @@
 }
 
 .blog-title{
+    font-size: 1.5em;
     grid-area: blog-title;
+    font-family: 'Roboto', sans-serif;
 }
 
 .author{
     grid-area: author;
 }
 
+.author-info{
+    display: inline-flex;
+    grid-area: author;
+    flex-direction: row;
+    align-items: center;
+}
+
+.author-bio{
+    margin-left: 0.8em;
+}
+
+.name{
+    margin: 0px;
+}
+
+.date{
+    font-style: italic;
+    margin: 0px;
+}
+
 .post{
+    line-height: 1.5em;
     grid-area: post;
+    font-family: 'Lato', sans-serif;
 }
