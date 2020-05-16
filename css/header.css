@@ -6,8 +6,6 @@
     border: 1px solid #efefef;
     border-radius: 3px;
     grid-area:header;
-}
-.header {
     color: var(--text-color); 
 }
 
@@ -48,10 +46,43 @@ a:hover {
 
 
 .footer{
+    display: flex;
     border: 1px solid #efefef;
     background-color: var(--hd-background-color);
     color: var(--text-color);
     border-radius: 3px;
     text-align: center;
     grid-area:footer;
+    flex-direction: column;
+}
+
+.website-info{
+    margin: 0px;
+    margin-bottom: 0.3em;
+}
+
+.icons-info{
+    margin: 0px;
+}
+
+.footer strong{
+    font-weight: bold;
+}
+
+.cp-info{
+    font-size: 0.75em;
+    color: black;
+}
+
+
+@media (min-width: 650px){
+
+    .navbar{
+        justify-content: left;
+    }
+
+    #title{
+        text-align: left;
+        margin: auto;
+    }
 }
