@@ -69,8 +69,13 @@ body{
     border: 2px solid white;
 }
 
+.author-name{
+    font-size: 0.90em;
+    color: black;
+    padding-top: 15px;
+}
+
 .card-preview{
-    padding-top: 20px;
 }
 
 .footer{
@@ -124,9 +129,10 @@ body{
         align-items: center;
         margin: auto;
     }
-    
+
     .categories{
         display: block;
+        padding: 10px;
     }
     
     .navbar{

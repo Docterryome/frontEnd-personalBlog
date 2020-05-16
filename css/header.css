@@ -45,3 +45,13 @@ a:hover {
     text-decoration: none;
     color: var(--hover-color);
 }
+
+
+.footer{
+    border: 1px solid #efefef;
+    background-color: var(--hd-background-color);
+    color: var(--text-color);
+    border-radius: 3px;
+    text-align: center;
+    grid-area:footer;
+}
