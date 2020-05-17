@@ -49,6 +49,8 @@
 }
 
 .social img {
+    min-width: 35px;
+    min-height: 35px;
     width: 6vw;
     height: 6vh;
 }
@@ -103,13 +105,18 @@
         "content content content content sidebar sidebar sidebar sidebar"
         "footer footer footer footer footer footer footer footer";
     }
+    .social{
+        justify-content: center;
+    }
 
-
+    .social img{
+        margin-right: 25px;
+        max-width: 50px;
+    }
     .sidebar{
         align-items: center;
         padding-left: 0px;
     }
-
     .related-post{
         padding-left: 10px;
     }
